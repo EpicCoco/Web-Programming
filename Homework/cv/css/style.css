@@ -1,6 +1,5 @@
 html * {
     font-family: 'Work Sans', sans-serif;
-    text-align: center;
     margin: 0%;
 }
 
@@ -11,6 +10,7 @@ html * {
     padding: 10px;
     background-color: rgb(196, 215, 178); 
     outline-color: black;
+    
 }
 
 .navbar a {
@@ -23,8 +23,7 @@ html * {
 }
 
 .navbar a:hover {
-    color: lightblue;
-    background-color: blue;    
+    background-color: lightskyblue;    
 }
 
 footer {
@@ -32,8 +31,8 @@ footer {
     justify-content: center;
     background-color: rgb(160, 196, 157);
     padding: 10px;
-    outline-color: blue;
     outline: auto;
+    text-align: center;
 }
 
 footer a {
@@ -46,22 +45,26 @@ footer a {
 
  footer a:hover {
     color: rgb(44, 46, 53);
-    background-color: rgb(25, 124, 124);
+    background-color: rgb(70, 156, 156);
  }
 
 .title {
     background-color: rgb(225, 236, 200);
     padding: 20px;
     font-weight: bold;
+    text-align: center;
 }
 
 .description { 
+    background-color: rgb(241, 245, 232);
     padding: 20px;
+    text-align: center;
 }
 
 .about {
-    background-color: rgb(247, 255, 229);
+    background-color: rgb(241, 245, 232);
     padding: 20px;
+    text-align: center;
     
 }
 
@@ -78,17 +81,75 @@ footer a {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    padding: 15px;
+    margin:5px;
+    background-color: rgb(237, 247, 219);
+    border-radius: 10px;
 }
 
 .card:hover {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 5px rgba(0,0,0,0.2);
+    background-color: rgb(228, 240, 204);
+    transform:scale(1.005);
+    
 }
 
-.card image {
+.card img {
     align-self: center;
-    size-adjust: auto;
+    width: 100%;
+    height: 200px;
+    border-radius: 7px;
+    object-fit: cover;
+    padding: auto;
+}
+
+.card #skills {
+    object-position: 30% 70%;
+}
+.card #lang {
+    object-position: 10% 100%;
+}
+.card #experience {
+    object-position: 50% 65%;
 }
 
 .three-col {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.one-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    width:max-content;
+    margin: 0 auto;
+}
+
+.form-elements {
+    padding: 5px;
+    margin: 3px auto;
+    box-shadow:0 4px 5px 2px rgba(0,0,0,0.08);
+    border-radius: 5px;
+    background-color: rgb(204, 231, 240);
+    border-color: lightgray;
+    display: block;
+}
+
+.submit-button {
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px; 
+    margin: 0 auto;
+    background-color: rgb(225, 236, 200);
+    box-shadow:0 4px 5px 2px rgba(0,0,0,0.08);
+}
+
+.submit-button:hover {
+    box-shadow:0 4px 10px 4px rgba(0,0,0,0.12);
+    background-color: rgb(203, 219, 164);
+}
+
+.line {
+    height: 1px;
+    background-color:black;
 }
