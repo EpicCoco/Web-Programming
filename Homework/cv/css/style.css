@@ -102,16 +102,9 @@ footer a {
     object-fit: cover;
     padding: auto;
 }
-
-.card #skills {
-    object-position: 30% 70%;
-}
-.card #lang {
-    object-position: 10% 100%;
-}
-.card #experience {
-    object-position: 50% 65%;
-}
+.card #skills {object-position: 30% 70%;}
+.card #lang {object-position: 10% 100%;}
+.card #experience {object-position: 50% 65%;}
 
 .three-col {
     display: grid;

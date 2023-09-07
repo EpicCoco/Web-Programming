@@ -1,0 +1,27 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    display: flex;
+    background-color: #003049;
+    flex-direction: row;
+    width: 90%;
+    height: 220px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    justify-content: space-between;
+    gap:10px;
+}
+.box1 {background-color: #80ffdb;}
+.box2 {background-color: #64dfdf;}
+.box3 {background-color: #48bfe3;}
+.box4 {background-color: #5390d9;}
+.box5 {background-color: #6930c3;}
+
+#container div {
+    width: 100px;
+    height: 100px;
+}
