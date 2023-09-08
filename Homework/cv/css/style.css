@@ -137,7 +137,7 @@ footer a {
     grid-template-columns: 1fr 1fr;
 }
 .even {
-    background-color: rgb(225, 236, 200);
+    background-color: rgb(237, 247, 219);
     border-radius: 5px;
     padding: 2px;
     transition: 0.3s;
