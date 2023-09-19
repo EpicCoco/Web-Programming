@@ -1,5 +1,4 @@
 html * {
-    font-family: 'Work Sans', sans-serif;
     margin: 0%;
 }
 
@@ -10,7 +9,7 @@ html * {
     padding: 10px;
     background-color: rgb(196, 215, 178); 
     outline-color: black;
-    
+    font-family:Montserrat;
 }
 
 .navbar a {
@@ -33,6 +32,7 @@ footer {
     padding: 10px;
     outline: auto;
     text-align: center;
+    font-family:Montserrat;
 }
 
 footer a {
@@ -51,25 +51,59 @@ footer a {
 .title {
     background-color: rgb(225, 236, 200);
     padding: 20px;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
+    font-family: 'Rubik';
+    text-shadow:  1px 1px gray;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
+.title #titletext {align-self: center;}
+.title #titletext h2 {color: rgb(83, 87, 80)}
+.title #name {font-size: xx-large;}
+.title img {
+    align-self: center;
+    height: 50px;
+    padding: auto;
+    position: absolute;
+    top: 25px;
+}
+.title #laptop {left: 30px;}
+.title #ugalogo {right: 30px;}
 
 .description { 
     background-color: rgb(241, 245, 232);
     padding: 20px;
     text-align: center;
+    font-family:Montserrat;
+}
+.description #greeting {
+    font-family:Space Mono;
+    font-weight: bold;
+    font-size: x-large;
+    color: lightcoral;
+}
+.description #bio {
+    font-weight:600;
+    font-size: medium;
+    color: rgb(83, 87, 80);
+}
+.description img {
+    align-self: center;
+    border-radius: 7px;
+    padding: auto;
 }
 
 .about {
     background-color: rgb(241, 245, 232);
     padding: 20px;
     text-align: center;
-    
+    font-family:Montserrat;
 }
 
 .about a {
-    color: black;
+    color: lightcoral;
     text-decoration: none;
 }
 
@@ -85,13 +119,39 @@ footer a {
     margin:5px;
     background-color: rgb(237, 247, 219);
     border-radius: 10px;
+    font-weight: bold;
+    display: inline-block;
+    justify-content: center;
 }
-
+.card ul {
+    text-align: left;
+    display: grid;
+    margin: 0 auto;
+    list-style-position:inside;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+}
+.card dl {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+}
+.even {
+    background-color: rgb(228, 240, 204);
+    border-radius: 5px;
+    padding: 2px;
+    transition: 0.3s;
+}
+.odd {
+    background-color: rgb(237, 247, 219);
+    border-radius: 5px;
+    padding: 2px;
+    transition: 0.3s;
+}
 .card:hover {
     box-shadow: 0 8px 16px 5px rgba(0,0,0,0.2);
     background-color: rgb(228, 240, 204);
-    transform:scale(1.005);
-    
+    transform:scale(1.007);   
 }
 
 .card img {
@@ -143,6 +203,8 @@ footer a {
 }
 
 .line {
-    height: 1px;
-    background-color:black;
+    height: 2px;
+    background-color:rgb(241, 245, 232);
+    border-top: 2px dotted black;
+    margin-top: 5px;
 }
