@@ -13,8 +13,8 @@ setTimeout(() => heading.textContent = "I love JavaScript", 3000);
 let image = document.querySelector("#main");
 // switch the src attribute the other image
 //image.src = "images/LoveJS.jpg";
-// switch after timeout event
-setTimeout(() => image.src = "images/LoveJS.jpg", 5000);
+// switch after timeout event after 5 seconds
+setTimeout(() => image.src = "images/LoveJS.jpg", 3000);
 
 /*
  make the link href valid
@@ -64,15 +64,29 @@ para.style.textAlign = 'center';
 Build a list dynamically with javascript
 */
 // create nodes to hold the list, input and button elements
-
-
+let unorderedList = document.querySelector('ul');
+let inputField = document.querySelector('input');
+let itemButton = document.querySelector('#button1');
 // on button click, read input from the content of the input box
-
-  // create a new list item to hold the user input
+itemButton.addEventListener("click", () => {
   
-  // create a button with the list item for deleting
+  let listElement = document.createElement("li");
+  listElement.innerHTML = inputField.value;
+  unorderedList.appendChild(listElement);
+  let deleteButton = document.createElement("button");
+  deleteButton.innerHTML = "delete";
+  listElement.appendChild(deleteButton);
+  deleteButton.addEventListener("click", () => {
+  unorderedList.removeChild(listElement); 
+  });
+  
+});
+// create a new list item to hold the user input
+//let listItem = document.createElement("li");
+//listItem.innerHTML = 
+// create a button with the list item for deleting
  
-  // append the span text to the li
+// append the span text to the li
 
 
   // if list item button clicked, remove the node item
