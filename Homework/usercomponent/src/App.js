@@ -1,12 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
-import User from './components/User';
 import AddUser from './components/AddUser';
 import Hdr from './components/Hdr';
 import UsersList from './components/UsersList';
 
 function App() {
 
+  /* dummy users if needed for use state
   const DUMMY_USERS = [
     {
       id: 'e1',
@@ -16,7 +16,8 @@ function App() {
       major: 'Computer Science',
     }
   ];
-  const[allUsers, setUsers] = useState([DUMMY_USERS]);
+  */
+  const[allUsers, setUsers] = useState([]);
 
   const addUserHandler = (user) => {
     setUsers((prevUsers) => {
