@@ -34,6 +34,7 @@ const AddUser = (props) => {
       age: userAge,
       img: userImage,
       major: userMajor,
+      id: Math.random().toString()
     };
     
     props.onAddUser(userData);

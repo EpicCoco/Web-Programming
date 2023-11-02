@@ -16,7 +16,7 @@ function App() {
       major: 'Computer Science',
     }
   ];
-  const[allUsers, setUsers] = useState(DUMMY_USERS);
+  const[allUsers, setUsers] = useState([DUMMY_USERS]);
 
   const addUserHandler = (user) => {
     setUsers((prevUsers) => {
