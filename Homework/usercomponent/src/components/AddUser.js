@@ -29,17 +29,20 @@ const AddUser = (props) => {
     event.preventDefault();
     if (!userName) return; //don't allow empty userName
 
+    //package the data into userData object
     const userData = {
       name: userName,
       age: userAge,
       img: userImage,
       major: userMajor,
-      id: Math.random().toString()
+      id: Math.random().toString() //give it unique id
     };
     
+    //send the data up to the parent (App)
     props.onAddUser(userData);
     console.log(userData);
 
+    //clear the forms
     setUserName('');
     setUserAge('');
     setUserImage('');

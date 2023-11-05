@@ -9,7 +9,9 @@ const UsersList = (props) => {
     return (
         <Card className="users">
             <ul>
-                {props.users.map((user) => (
+                {
+                //map the user data to the User component
+                props.users.map((user) => (
                     <User
                         key={user.id}
                         img={user.img}

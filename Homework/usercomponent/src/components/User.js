@@ -3,8 +3,6 @@ import './User.css';
 
 const User = (props) => {
 
-    
-
     return (    
         <li key={props.id} className="user-item">
         <img src={props.img} className="user-img" alt={props.name} />

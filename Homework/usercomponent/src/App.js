@@ -17,6 +17,8 @@ function App() {
     }
   ];
   */
+
+  //starts the list out as empty
   const[allUsers, setUsers] = useState([]);
 
   const addUserHandler = (user) => {
