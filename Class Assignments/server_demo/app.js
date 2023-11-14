@@ -4,9 +4,11 @@ const app = express();
 const port = process.env.PORT || 8082;
 const cors = require('cors');
 const router = express.Router();
+const items = require('./routes/api/items');
 
 app.use(cors({origin: true, credentials: true}));
 app.use(express.json({extended: false}));
+app.use('/api/items', items);
 app.get('/', (req, res) => res.send('Hello World!'));
 
 const conn_str = 'mongodb+srv://codeyborrelli:flJCpJZuFsH0Adsr@cluster0.thd6qks.mongodb.net/?retryWrites=true&w=majority';
