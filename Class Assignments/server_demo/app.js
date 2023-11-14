@@ -12,8 +12,8 @@ app.get('/', (req, res) => res.send('Hello World!'));
 const conn_str = 'mongodb+srv://codeyborrelli:flJCpJZuFsH0Adsr@cluster0.thd6qks.mongodb.net/?retryWrites=true&w=majority';
 mongoose.set('strictQuery', false);
 mongoose.connect(conn_str, {
-    useUnifiedTopology: true,
-    useNewUrlParser: true
+    //useUnifiedTopology: true,
+    //useNewUrlParser: true
 })
 .then(() => {
     app.listen(port);
